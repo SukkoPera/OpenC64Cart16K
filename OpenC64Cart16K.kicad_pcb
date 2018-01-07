@@ -15,7 +15,7 @@
   (page A4)
   (title_block
     (title "OpenC64Cart16K: C64 Single-Chip 16K Cartridge")
-    (date 2018-01-02)
+    (date 2018-01-07)
     (rev 1)
     (company SukkoPera)
     (comment 1 "Thanks to Jani")
@@ -29,7 +29,7 @@
     (38 B.Mask user)
     (39 F.Mask user)
     (44 Edge.Cuts user)
-    (49 F.Fab user hide)
+    (49 F.Fab user)
   )
 
   (setup
@@ -292,7 +292,7 @@
       (net 1 GND))
     (pad 2 thru_hole circle (at 2.5 0 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 2 +5V))
-    (model Capacitors_SMD.3dshapes/C_0805.wrl
+    (model Capacitors_SMD.3dshapes/C_0805.wrl-xxx
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -332,7 +332,7 @@
     )
   )
 
-  (module OpenC64Cart16K:PCB_PUSH (layer F.Cu) (tedit 5A47B11B) (tstamp 5A47AFBD)
+  (module OpenC64Cart16K:PCB_PUSH (layer F.Cu) (tedit 5A522F6D) (tstamp 5A47AFBD)
     (at 69.2912 86.07044 270)
     (descr "PCB pushbutton, Tyco FSM6x6 series")
     (tags pushbutton)
@@ -340,7 +340,7 @@
     (fp_text reference SW1 (at 0 -5.08 270) (layer F.SilkS) hide
       (effects (font (size 1.27 1.27) (thickness 0.3175)))
     )
-    (fp_text value RESET_SW (at -4.699 0 360) (layer F.SilkS)
+    (fp_text value RESET (at -4.53644 -0.0508 360) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_line (start -3.048 -3.048) (end 3.048 -3.048) (layer F.SilkS) (width 0.3048))
@@ -1002,12 +1002,12 @@
   (segment (start 107.95 119.72925) (end 107.95 121.351726) (width 0.25) (layer F.Cu) (net 6))
   (segment (start 107.95 121.351726) (end 107.95 125.601726) (width 0.25) (layer F.Cu) (net 6))
   (segment (start 105.664 99.314) (end 105.664 100.66382) (width 0.25) (layer F.Cu) (net 7))
-  (segment (start 105.664 100.66382) (end 96.774 109.55382) (width 0.25) (layer F.Cu) (net 7))
   (segment (start 96.774 109.55382) (end 96.774 115.57) (width 0.25) (layer F.Cu) (net 7))
+  (segment (start 105.664 100.66382) (end 96.774 109.55382) (width 0.25) (layer F.Cu) (net 7))
+  (segment (start 103.359789 117.329789) (end 105.41 119.38) (width 0.25) (layer F.Cu) (net 7))
   (segment (start 96.774 115.57) (end 98.533789 117.329789) (width 0.25) (layer F.Cu) (net 7))
-  (segment (start 98.533789 117.329789) (end 104.375789 117.329789) (width 0.25) (layer F.Cu) (net 7))
-  (segment (start 104.375789 117.329789) (end 105.41 118.364) (width 0.25) (layer F.Cu) (net 7))
-  (segment (start 105.41 118.364) (end 105.41 125.601726) (width 0.25) (layer F.Cu) (net 7))
+  (segment (start 105.41 119.38) (end 105.41 125.601726) (width 0.25) (layer F.Cu) (net 7))
+  (segment (start 98.533789 117.329789) (end 103.359789 117.329789) (width 0.25) (layer F.Cu) (net 7))
   (segment (start 102.87 125.601726) (end 102.87 118.11) (width 0.25) (layer F.Cu) (net 8))
   (segment (start 102.87 118.11) (end 102.5398 117.7798) (width 0.25) (layer F.Cu) (net 8))
   (segment (start 102.5398 117.7798) (end 96.4438 117.7798) (width 0.25) (layer F.Cu) (net 8))
@@ -1221,8 +1221,8 @@
         (xy 104.013945 113.810409) (xy 103.805135 113.497901) (xy 103.492627 113.289091) (xy 103.124 113.215766) (xy 102.755373 113.289091)
         (xy 102.442865 113.497901) (xy 102.234055 113.810409) (xy 102.16073 114.179036) (xy 102.16073 114.928964) (xy 102.234055 115.297591)
         (xy 102.442865 115.610099) (xy 102.755373 115.818909) (xy 103.124 115.892234) (xy 103.492627 115.818909) (xy 103.534261 115.791091)
-        (xy 107.6123 119.86913) (xy 107.6123 121.2723) (xy 105.7477 121.2723) (xy 105.7477 118.364) (xy 105.721994 118.234768)
-        (xy 105.64879 118.12521) (xy 104.614579 117.090999) (xy 104.505021 117.017795) (xy 104.375789 116.992089) (xy 98.673669 116.992089)
+        (xy 107.6123 119.86913) (xy 107.6123 121.2723) (xy 105.7477 121.2723) (xy 105.7477 119.38) (xy 105.721994 119.250768)
+        (xy 105.64879 119.14121) (xy 103.598579 117.090999) (xy 103.489021 117.017795) (xy 103.359789 116.992089) (xy 98.673669 116.992089)
         (xy 97.1117 115.43012) (xy 97.1117 115.08466) (xy 97.154055 115.297591) (xy 97.362865 115.610099) (xy 97.675373 115.818909)
         (xy 98.044 115.892234) (xy 98.412627 115.818909) (xy 98.725135 115.610099) (xy 98.933945 115.297591) (xy 99.00727 114.928964)
         (xy 99.00727 114.179036) (xy 98.933945 113.810409) (xy 98.725135 113.497901) (xy 98.412627 113.289091) (xy 98.3817 113.282939)

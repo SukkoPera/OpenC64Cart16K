@@ -32,7 +32,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "OpenC64Cart16K: C64 Single-Chip 16K Cartridge"
-Date "2018-01-02"
+Date "2018-01-07"
 Rev "1"
 Comp "SukkoPera"
 Comment1 "Thanks to Jani"
