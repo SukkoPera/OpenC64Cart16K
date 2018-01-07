@@ -16,7 +16,7 @@ Usage is straightforward: just insert the EEPROM in the socket making sure that 
 ### Configuration
 **IMPORTANT: ALWAYS TURN YOUR C64 OFF BEFORE MOVING THE CONFIGURATION JUMPERS.**
 
-When flashing the contents, make sure that every file is exactly 16384 bytes long and just concatenate them. If you 16 KB ROM is split into two 8 KB files, concatenate them as well, with the "low" ROM before the "high" ROM.
+When flashing the contents, make sure that every file is exactly 16384 bytes long and just concatenate them. If your 16 KB ROM is split into two 8 KB files, concatenate them as well, with the "low" ROM before the "high" ROM.
 
 Then use the following table to set the jumper configuration for your image of choice:
 
