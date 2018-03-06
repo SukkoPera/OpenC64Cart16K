@@ -1,5 +1,5 @@
 # OpenC64Cart16K
-OpenC64Cart16K is an Open Hardware 16 KB Cartridge for the Commodore 64, that uses a single (E)EPROM chip. It is the 16 KB counterpart to [OpenC64Cart](https://github.com/SukkoPera/OpenC64Cart).
+OpenC64Cart16K is an Open Hardware Cartridge for the Commodore 64. It only supports 16 KB ROMs and uses a single (E)EPROM chip. It is the 16 KB counterpart to [OpenC64Cart](https://github.com/SukkoPera/OpenC64Cart).
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/OpenC64Cart16K/master/doc/render-top.png)
 
